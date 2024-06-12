@@ -91,9 +91,10 @@ section {
 #gallery {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 5px;
 }
 
-#gallery h1, #gallery p {
+#gallery h2, #gallery p {
     grid-column: 1/-1;
 }
 
