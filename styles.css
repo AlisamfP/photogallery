@@ -1,0 +1,103 @@
+:root{
+    --teal: #007d7b;
+    --black: #000;
+    --white: #fff;
+    --fonts: Arial, Helvetica, sans-serif;
+
+}
+html{
+    width: 1000px;
+    margin: 0 auto;
+}
+body {
+    font-family: var(--fonts);
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--black);
+    width: 80%;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+figcaption, label, input, small {
+    font-size: 1em;
+}
+
+nav a {
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+header {
+    background-color: var(--black);
+}
+
+#title {
+    margin: 0 auto;
+    background-color: var(--white);
+    color: var(--teal);
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav ul li {
+    list-style: none;
+}
+    
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+main {
+    background-color: var(--white);
+}
+
+section figure {
+    text-align: center;
+}
+
+#contact {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+footer {
+    text-align: center;
+    color: var(--white);
+}
+
+@media screen and (min-width: 1300px) {
+    nav ul {
+        justify-content: end;
+    }    
+}
+@media screen and (min-width: 880px) {
+    
+}
+
+@media screen and (min-width: 485px) {
+    
+}
