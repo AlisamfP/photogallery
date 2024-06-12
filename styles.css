@@ -14,7 +14,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     background-color: var(--black);
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -36,6 +36,7 @@ h1 {
 
 h2 {
     font-size: 2em;
+    text-align: center;
 }
 
 header {
@@ -46,6 +47,7 @@ header {
     margin: 0 auto;
     background-color: var(--white);
     color: var(--teal);
+    padding: 5px 10px;
 }
 
 
@@ -63,19 +65,52 @@ nav ul li {
 nav ul li a {
     color: var(--white);
     text-decoration: none;
+    padding: 10px;
 }
 
-main {
+nav ul li a:hover {
+    color:  var(--teal);
+}
+
+[href="#top"] {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-top: 2px solid var(--white);
+    border-left: 2px solid var(--white);
+}
+
+main div {
     background-color: var(--white);
+}
+
+section {
+    padding: 10px;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#gallery h1, #gallery p {
+    grid-column: 1/-1;
 }
 
 section figure {
     text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+figure img {
+    width: 100%;
 }
 
 #contact {
     background-color: var(--black);
     color: var(--white);
+    text-align: center;
 }
 
 form {
@@ -84,19 +119,31 @@ form {
     justify-items: center;
 }
 
+::placeholder {
+    color: var(--teal);
+    font-variant: small-caps;
+}
+
 footer {
     text-align: center;
     color: var(--white);
 }
-
+@media screen and (min-width: 485px) {
+    #gallery {
+        grid-template-columns: 0.5fr 0.5fr;
+    }
+}
 @media screen and (min-width: 1300px) {
     nav ul {
         justify-content: end;
-    }    
-}
-@media screen and (min-width: 880px) {
+    }
+    #gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
     
 }
+
 
 @media screen and (min-width: 485px) {
     
