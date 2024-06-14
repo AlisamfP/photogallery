@@ -180,6 +180,7 @@ textarea {
 }
 
 input[type="submit"] {
+    border: none;
     background-color: var(--teal);
     color: var(--white);
     font-weight: bold;
