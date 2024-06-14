@@ -5,16 +5,19 @@
     --fonts: Arial, Helvetica, sans-serif;
 
 }
-html{
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: var(--black);
+
+* {
+    box-sizing: border-box;
 }
+
 body {
     font-family: var(--fonts);
-    display: grid;
-    grid-template-columns: 1fr;
     background-color: var(--black);
+    margin: 0 auto;
+    min-width: 300px;
+}
+
+header, main, footer {
     width: 90%;
     margin: 0 auto;
 }
@@ -28,7 +31,7 @@ figcaption, label, input, small {
 }
 
 nav a {
-    font-size: 1.5em;
+    font-size: 4vw;
 }
 
 h1 {
@@ -40,15 +43,21 @@ h2 {
     text-align: center;
 }
 
+h1, h2, nav ul, small {
+    text-transform: uppercase;
+}
+
 header {
     background-color: var(--black);
 }
 
 #title {
+    font-size: 9vw;
     margin: 0 auto;
     background-color: var(--white);
     color: var(--teal);
     padding: 5px 10px;
+    white-space: nowrap;
 }
 
 
@@ -56,7 +65,8 @@ nav ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2em;
+    gap: 1em;
+    padding: 0 10px 0 20px;
 }
 
 nav ul li {
@@ -114,26 +124,22 @@ figure img {
 figcaption {
     position: relative;
     color: var(--black);
-    bottom: 90%;
+    font-weight: bold;
 }
 
-figure:nth-of-type(1) figcaption, 
-figure:nth-of-type(3) figcaption,
-figure:nth-of-type(7) figcaption {
+.bottomText {
     top: -30px;
-    color: var(--white);
 }
 
-figure:nth-of-type(4) figcaption,
-figure:nth-of-type(5) figcaption {
+.tallImgTopText {
     bottom: 95%;
 }
 
-figure:nth-of-type(6) figcaption {
-    top: -30px;
+.topText {
+    bottom: 90%;
 }
 
-figure:nth-of-type(12) figcaption {
+.whiteFont {
     color: var(--white);
 }
 
@@ -157,8 +163,17 @@ form {
 footer {
     text-align: center;
     color: var(--white);
+    padding: 30px 0 10px 0;
+    
 }
+
 @media screen and (min-width: 485px) {
+    nav a {
+        font-size: 1.5em;
+    }
+    #title {
+        font-size: 3em;
+    }
     #gallery {
         grid-template-columns: 0.5fr 0.5fr;
     }
@@ -166,15 +181,11 @@ footer {
 @media screen and (min-width: 1300px) {
     nav ul {
         justify-content: end;
+        padding: 0;
     }
     #gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
     
-    
-}
-
-
-@media screen and (min-width: 485px) {
     
 }
