@@ -138,12 +138,8 @@ figcaption {
     top: -30px;
 }
 
-.tallImgTopText {
-    bottom: 95%;
-}
-
 .topText {
-    bottom: 90%;
+    bottom: calc(100% - 30px);
 }
 
 .whiteFont {
