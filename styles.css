@@ -151,13 +151,26 @@ figcaption {
 
 form {
     display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+    grid-template-columns: minmax(auto, 1fr);
+    text-align: left;
+}
+
+label {
+    padding-left: 1em;
+    text-transform: uppercase;
+}
+input, textarea {
+    margin-bottom: 1em;
+    padding: 10px;
+    color: var(--teal);
+    height: 3em;
 }
 
 ::placeholder {
+    font-weight: bold;
     color: var(--teal);
-    font-variant: small-caps;
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 footer {
