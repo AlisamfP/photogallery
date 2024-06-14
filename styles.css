@@ -164,15 +164,34 @@ label {
 input, textarea {
     margin-bottom: 1em;
     padding: 10px;
-    color: var(--teal);
+    font-family: var(--fonts);
     height: 3em;
 }
 
-::placeholder {
+input[value], textarea {
     font-weight: bold;
     color: var(--teal);
     font-size: 1em;
     text-transform: uppercase;
+}
+
+textarea {
+    padding: 15px 10px;
+}
+
+input[type="submit"] {
+    background-color: var(--teal);
+    color: var(--white);
+    font-weight: bold;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+    border: 3px solid var(--white);
+    box-shadow: 0px 0px 9px 1px var(--white);
 }
 
 footer {
