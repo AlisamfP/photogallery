@@ -147,6 +147,8 @@ figcaption {
     background-color: var(--black);
     color: var(--white);
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 form {
